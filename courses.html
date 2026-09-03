@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — AIVANTA</title>
+  <meta name="description" content="Industry-focused programming courses from AIVANTA: Java, Python, HTML & CSS, JavaScript, Frontend Web Development, Java Spring Boot, and SQL & MySQL." />
+  <link rel="canonical" href="https://aivanta.example.com/courses.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Courses — AIVANTA" />
+  <meta property="og:description" content="Industry-focused programming courses in Java, Python, frontend, backend, and databases." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="logo">AIVANTA<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-page="index.html">Home</a></li>
+        <li><a href="services.html" data-page="services.html">Services</a></li>
+        <li><a href="courses.html" data-page="courses.html" class="active">Courses</a></li>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="services.html#quote" class="btn btn-outline">Get Started</a>
+        <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Courses</span>
+        <h1>Programming courses built around real projects</h1>
+        <p>Search or filter by category to find the course that matches where you're starting from.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="course-filters">
+          <div class="filter-pills" role="group" aria-label="Filter courses by category">
+            <button class="filter-pill active" data-category="all" type="button">All</button>
+            <button class="filter-pill" data-category="programming" type="button">Programming</button>
+            <button class="filter-pill" data-category="frontend" type="button">Frontend</button>
+            <button class="filter-pill" data-category="backend" type="button">Backend</button>
+            <button class="filter-pill" data-category="database" type="button">Database</button>
+          </div>
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <label for="course-search" class="visually-hidden" style="position:absolute;left:-9999px;">Search courses</label>
+            <input type="search" id="course-search" placeholder="Search courses…" />
+          </div>
+        </div>
+
+        <div class="grid grid-3" id="course-grid">
+          <!-- Rendered by js/courses.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Not sure where to start?</h2>
+          <p>Every course starts from the fundamentals — no assumed background beyond what's listed as a requirement.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Talk to Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">AIVANTA<span class="dot">.</span></a>
+          <p>Build. Learn. Innovate. Professional websites and industry-focused programming courses.</p>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Business Websites</a></li>
+            <li><a href="services.html">Portfolio Websites</a></li>
+            <li><a href="services.html">E-Commerce Websites</a></li>
+            <li><a href="services.html">Custom Websites</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Courses</h5>
+          <ul>
+            <li><a href="course-details.html?slug=java-programming">Java Programming</a></li>
+            <li><a href="course-details.html?slug=python-programming">Python Programming</a></li>
+            <li><a href="course-details.html?slug=frontend-web-development">Frontend Development</a></li>
+            <li><a href="course-details.html?slug=sql-mysql">SQL &amp; MySQL</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> AIVANTA. All rights reserved.</span>
+        <span>Build. Learn. Innovate.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Vercel
+.vercel
+
+# Node (in case any tooling is added later)
+node_modules/
+npm-debug.log*
+
+# Env files
+.env
+.env.local

@@ -1,0 +1,57 @@
+/* ============================================================
+   AIVANTA — Responsive Overrides
+   Loaded after style.css. Covers tablet/mobile refinements
+   that don't fit cleanly as inline media queries in style.css.
+   ============================================================ */
+
+/* Large tablets / small laptops */
+@media (max-width: 1080px) {
+  :root {
+    --fs-800: 3.1rem;
+    --fs-700: 2.4rem;
+  }
+  .container { padding: 0 20px; }
+  .section { padding: 72px 0; }
+}
+
+/* Tablets */
+@media (max-width: 760px) {
+  .nav { height: 68px; }
+  .section { padding: 56px 0; }
+  .section--tight { padding: 44px 0; }
+  .section-head { margin-bottom: 36px; }
+  .hero { padding: 56px 0 64px; }
+  .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .cta-band-inner { flex-direction: column; align-items: flex-start; text-align: left; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .values-grid { grid-template-columns: 1fr; }
+  .enroll-card { position: static; }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  :root {
+    --fs-800: 2.4rem;
+    --fs-700: 1.9rem;
+    --fs-600: 1.6rem;
+  }
+  .container { padding: 0 16px; }
+  .btn { width: 100%; }
+  .hero-actions .btn { width: auto; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; }
+  .card, .course-card .body, .modal { padding-left: 20px; padding-right: 20px; }
+  .modal { padding: 28px 20px; }
+  .form-grid { gap: 16px; }
+  .course-filters { flex-direction: column; align-items: stretch; }
+  .search-box { min-width: 0; width: 100%; }
+  .filter-pills { justify-content: flex-start; }
+  .back-to-top { width: 40px; height: 40px; bottom: 16px; left: 16px; }
+  .toast { right: 16px; left: 16px; bottom: 16px; max-width: none; }
+}
+
+/* Print — quietly usable if someone prints a course page */
+@media print {
+  .site-header, .site-footer, .back-to-top, .modal-overlay, .toast, .cta-band { display: none !important; }
+  body { background: #fff; color: #000; }
+}
